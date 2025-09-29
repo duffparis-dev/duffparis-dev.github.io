@@ -6,6 +6,11 @@ gem "jekyll-theme-chirpy", "~> 7.3", ">= 7.3.1"
 
 gem "html-proofer", "~> 5.0", group: :test
 
+# Explicit stdlib gems (needed since Ruby 3.4+ no longer includes them by default)
+gem "erb"
+gem "logger"
+gem "webrick"
+
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
